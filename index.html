@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Confirmação de Presença</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Confirme sua presença</h1>
+
+    <form id="rsvpForm">
+      <label for="nome">Seu nome:</label>
+      <input id="nome" type="text">
+      
+      <label for="presenca">Você vem?</label>
+      <select id="presenca">
+        <option>Sim</option>
+        <option>Não</option>
+      </select>
+      
+      <label for="acompanhantes">Acompanhantes:</label>
+      <input id="acompanhantes" type="number" value="0" min="0">
+      <button type="submit">Confirmar</button>
+    </form>
+
+    <h2>Lista de Confirmados</h2>
+
+    <div id="resumo-container">
+        <p id="resumo">Vão: 0 | Não vão: 0 | Acompanhantes: 0</p>
+        <ul id="lista"></ul>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

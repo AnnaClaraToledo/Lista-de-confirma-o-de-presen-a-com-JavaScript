@@ -1,0 +1,111 @@
+/* Fundo animado com GIF */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: url("Luigi.gif") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Container centralizado com transparência */
+.container {
+    background: rgba(0, 0, 0, 0.6); /* Fundo preto transparente para destacar o texto */
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    width: 320px;
+}
+
+/* Título chamativo */
+h1 {
+  text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #fff;
+  box-shadow: 70px;
+}
+
+/* Labels e inputs */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Botão estilizado */
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+/* Mensagem de confirmação */
+#confirmationMessage {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+
+@media (max-width: 600px) {
+
+  /* 1. Ajustar o container principal */
+  .container {
+   
+    width: 90%; 
+    padding: 15px; 
+    margin-top: 20px; 
+  }
+
+
+  h1 {
+    font-size: 2em; /
+  }
+
+  h2 {
+    font-size: 1.5em; 
+  }
+
+  
+  label, input, select, button {
+    font-size: 16px; 
+    margin-bottom: 12px; 
+  }
+
+  
+  #lista li {
+    font-size: 14px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; /
+  }
+
+}
